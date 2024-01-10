@@ -1,6 +1,7 @@
 import { createBrowserRouter } from "react-router-dom";
 import Layout from "./Layout";
 import TodosPage from "../../pages/TodosPage";
+import TodoPage from "../../pages/TodoPage";
 
 const router = createBrowserRouter([
   {
@@ -11,6 +12,10 @@ const router = createBrowserRouter([
       {
         path: "",
         element: <TodosPage />,
+      },
+      {
+        path: "/:id",
+        element: <TodoPage />,
       },
     ],
   },
