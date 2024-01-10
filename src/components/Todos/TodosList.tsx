@@ -2,7 +2,6 @@ import todos from "../../data/todos.json";
 import TodosItem from "./TodosItem";
 
 const TodosList: React.FC = () => {
-  console.log(todos);
   if (!todos.length) return <>Pas de listes disponibles</>;
   return (
     <>
