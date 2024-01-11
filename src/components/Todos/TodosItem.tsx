@@ -2,12 +2,13 @@ import React, { useState } from "react";
 import { TodoItemType, TodoType } from "../../types/Todo/Todo";
 import AddTasks from "../Todo/AddTask";
 import Todo from "../Todo/Todo";
+import { v4 as uuidv4 } from "uuid";
 
 const TodosItem: React.FC<{ todo: TodoType }> = ({ todo }) => {
   const [tasks, setTasks] = useState<Array<TodoItemType>>(todo.tasks);
   const addTasks = (name: string) => {
     const task: TodoItemType = {
-      id: "sqnskn",
+      id: uuidv4(),
       name: name,
       description: "Description",
     };
