@@ -1,12 +1,11 @@
 export type TodoItemType = {
-  id: number;
+  id: string;
   name: string;
   description: string;
 };
 
-
 export type TodoType = {
-  id: number;
+  id: string;
   name: string;
   tasks: Array<TodoItemType>;
 };
